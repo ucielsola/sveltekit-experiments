@@ -1,0 +1,46 @@
+* {
+	transition: color 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+html.dracula-theme {
+	--background: #282a36;
+	--body: #6272a4;
+	--highlight: #f8f8f2;
+	--border: #44475a;
+}
+
+html.ebony-theme {
+	--background: #4b4e40;
+	--body: #ffe8d6;
+	--highlight: #dfb59f;
+	--border: #b7b7a4;
+}
+
+html.pastel-theme {
+	--background: #264653;
+	--body: #e9c46a;
+	--highlight: #e76f51;
+	--border: #3a6b7e;
+}
+
+html.grayscale-theme {
+	--background: #212529;
+	--body: #afb3b8;
+	--highlight: #ffffff;
+	--border: #495057;
+}
+html.violet-theme {
+	--background: #10002b;
+	--body: #9d4edd;
+	--highlight: #e0aaff;
+	--border: #3c096c;
+}
+
+html.creamy-theme {
+	--background: #364f6b;
+	--body: #3fc1c9;
+	--highlight: #db7ca4;
+	--border: #f5f5f5;
+}
+
