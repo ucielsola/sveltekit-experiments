@@ -14,7 +14,7 @@
 		justify-content: space-between;
 		padding-inline: 1.5rem;
 		padding-block: 0.5rem;
-		border-bottom: 1px solid white;
+		border-bottom: 1px solid var(--highlight);
 		height: 6rem;
 	}
 </style>

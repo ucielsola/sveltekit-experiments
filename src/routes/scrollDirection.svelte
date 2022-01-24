@@ -3,20 +3,15 @@
 
 	let scrollY;
 	let scrollUp = false;
-	const showNav = () => {
-		setTimeout(() => {
-			console.log('stop');
-			return true;
-		}, 800);
-	};
+
 	let scrollPos = 0;
 
-	$: if (scrollY > scrollPos) {
-		console.log('start');
-		let oldScroll = 0;
-		scrollUp = oldScroll < scrollY;
-		showNav();
+	$: {
+		scrollY > scrollPos ? (scrollUp = false) : (scrollUp = true);
+		scrollPos = scrollY;
 	}
+
+	
 </script>
 
 <svelte:window bind:scrollY />
@@ -24,5 +19,20 @@
 <svelte:head><title>Scroll Detection</title></svelte:head>
 
 <section>
-    <h1 class="title">Scroll detection</h1>
+	<h1 class="title">Scroll detection</h1>
+
+	<ul>
+		<li>Scrolling direction: {scrollUp ? 'up' : 'down'}</li>
+		<li>Pixels scrolled : {scrollY}</li>
+	</ul>
 </section>
+
+<style>
+	section {
+		min-height: 110vh;
+	}
+
+	ul {
+		position: fixed;
+	}
+</style>

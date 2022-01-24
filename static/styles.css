@@ -13,11 +13,14 @@ html {
 body {
 	font-family: sans-serif;
 	font-size: 1.5rem;
+	color: var(--body);
+
 }
 
 .title {
 	font-size: 3rem;
 	color: var(--highlight);
+	padding-bottom: 2rem;
 }
 
 .subtitle {
@@ -38,9 +41,6 @@ li::marker {
 	color: var(--border);
 }
 
-p {
-	color: var(--body);
-}
 
 .highlight {
 	font-weight: bold;
