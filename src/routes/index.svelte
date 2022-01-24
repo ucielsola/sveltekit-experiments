@@ -1,33 +1,39 @@
 <section>
-<h1 class="title">Hi! This is my place to test and break stuff with <a class="link" href="https://kit.svelte.dev">SvelteKit</a></h1>
+	<h1 class="title">
+		Hi! This is my place to test and break stuff with <a class="link" href="https://kit.svelte.dev"
+			>SvelteKit</a
+		>
+	</h1>
 
-<h2><a id="to-portfolio" href="https://ucielsola.com">- Visit my portfolio -</a></h2>
+	<div class="link-wrapper">
+		<a id="to-portfolio" class="highlight" href="https://ucielsola.com">- Visit my portfolio -</a>
+	</div>
 
-<h2 class="subtitle">The experiments:</h2>
-<nav>
-    <li>
-        <a class="link" href="/scrollDirection">Scroll detection</a>
-    </li>
-</nav>
-
-
-
+	<iframe
+		title="Gif"
+		src="https://giphy.com/embed/M9TraSZZ6csmhxyxRo"
+		width="480"
+		height="270"
+		frameBorder="0"
+		class="giphy-embed"
+		allowFullScreen
+	/>
 </section>
 
-
 <style>
-    * {
-        font-family: sans-serif;
-    }
+	.link-wrapper {
+		text-align: center;
+		font-size: 1.5rem;
+		margin-inline: auto;
+		padding-block: 3rem;
+	}
 
-    section {
-        padding-inline: 1rem;
-    }
-
-    #to-portfolio {
-        display: block;
-        text-align: center;
-        font-size: 1.5rem;
-        color: aliceblue;
-}
+	section {
+		display: grid;
+		place-content: center;
+	}
+	iframe {
+		margin-inline: auto;
+		pointer-events: none;
+	}
 </style>
