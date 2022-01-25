@@ -31,11 +31,11 @@
 
 <div class="container {browser ? 'show' : ''}">
 	<Header />
-		<main>
-			<PageTransitions refresh={key}>
-				<slot />
-			</PageTransitions>
-		</main>
+	<main>
+		<PageTransitions refresh={key}>
+			<slot />
+		</PageTransitions>
+	</main>
 </div>
 
 <style>
@@ -47,10 +47,6 @@
 	.container.show {
 		animation: fade-in 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
 	}
-	main {
-		padding-inline: 0.5rem;
-		padding-block: 1rem;
-	}
 	@keyframes fade-in {
 		0% {
 			opacity: 0;
@@ -60,4 +56,13 @@
 		}
 	}
 
+	main {
+		padding-inline: 0.5rem;
+		padding-block: 1rem;
+	}
+	@media screen and (min-width: 1024px) {
+		main {
+			padding-inline: 3rem;
+		}
+	}
 </style>

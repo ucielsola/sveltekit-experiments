@@ -59,7 +59,9 @@ button {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
+	max-width: 1024px;
+	border-radius: 10px;
 }
 
 select {
@@ -92,6 +94,5 @@ select {
 	}
 	button {
 		font-size: 2rem;
-	}	
+	}
 }
-	

@@ -1,9 +1,18 @@
 <script>
+	import { page } from '$app/stores';
 	import ThemeSelector from '$lib/components/themeSelector.svelte';
+	import { onMount } from 'svelte';
+
+	let onHome = true;
+	let path = $page.url.pathname
+
+	$: {
+		onHome = path === "/"
+	}
 </script>
 
 <header>
-	<a class="subtitle" href="/">SvelteKit Experiments</a>
+	<a class="subtitle" href="/">{onHome ? 'SvelteKit Experiments' : '< Back'}</a>
 	<ThemeSelector />
 </header>
 

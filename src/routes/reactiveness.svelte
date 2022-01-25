@@ -7,6 +7,8 @@
 	}
 </script>
 
+<section>
+
 <h1 class="title">Reactiveness - Reactive Statements</h1>
 
 <h2 class="subtitle">WIP</h2>
@@ -27,29 +29,40 @@
 	would only take a little bit of code like this:
 </p>
 
-<img src="https://i.imgur.com/aWFKGTr.png" alt="Code Screenshot" />
+<div class="img-wrapper">
+	<img src="https://i.imgur.com/aWFKGTr.png" alt="Code Screenshot" />
+</div>
 
 <p>
 	And one click here:
 	<button on:click={() => (running = !running)}>{running ? 'Stop!' : 'Run!'}</button>
 </p>
 
-<img
-	src="https://c.tenor.com/nnW3lB0PKC4AAAAi/mario-running-tiny.gif"
-	alt="Mario GIF"
-	class="mario {running ? 'running' : ''}"
-/>
+	<img
+		src="https://c.tenor.com/nnW3lB0PKC4AAAAi/mario-running-tiny.gif"
+		alt="Mario GIF"
+		class="mario {running ? 'running' : ''}"
+	/>
+</section>
 
 <style>
+	section {
+		position: relative;
+		overflow: hidden !important;
+	}
+	.img-wrapper {
+		display: grid;
+		place-content: center;
+		padding-block: 1rem;
+	}
 	.mario {
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 		width: 3rem;
 		opacity: 0;
 	}
 
 	.mario.running {
-
 		animation: running 3s linear;
 	}
 
@@ -57,7 +70,6 @@
 		0% {
 			opacity: 0;
 			transform: translateX(-10vw);
-
 		}
 		5% {
 			opacity: 1;
