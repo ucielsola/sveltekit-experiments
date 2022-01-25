@@ -1,3 +1,7 @@
+<script>
+import SideNav from "$lib/components/sideNav.svelte";
+
+</script>
 <section>
 	<h1 class="title">
 		Hi! This is my place to test and break stuff with <a class="link" href="https://kit.svelte.dev"
@@ -20,19 +24,19 @@
 	/>
 </section>
 
+<section>
+	<SideNav/>
+</section>
+
 <style>
 	.link-wrapper {
 		text-align: center;
 		font-size: 1.5rem;
 		margin-inline: auto;
-		padding-block: 3rem;
 	}
 
-	section {
-		display: grid;
-		place-content: center;
-	}
 	iframe {
+		width: 100%;
 		margin-inline: auto;
 		pointer-events: none;
 	}

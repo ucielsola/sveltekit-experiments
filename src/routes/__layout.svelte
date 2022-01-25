@@ -17,6 +17,7 @@
 	import PageTransitions from '$lib/components/PageTransitions.svelte';
 	export let key;
 
+	let showAside = false;
 	let hide = true;
 
 	onMount(() => {
@@ -30,15 +31,11 @@
 
 <div class="container {browser ? 'show' : ''}">
 	<Header />
-	<div class="columns">
-		<SideNav />
-
 		<main>
 			<PageTransitions refresh={key}>
 				<slot />
 			</PageTransitions>
 		</main>
-	</div>
 </div>
 
 <style>
@@ -50,12 +47,8 @@
 	.container.show {
 		animation: fade-in 1.3s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
 	}
-	.columns {
-		display: flex;
-		flex-direction: row;
-	}
 	main {
-		padding-inline: 2rem;
+		padding-inline: 0.5rem;
 		padding-block: 1rem;
 	}
 	@keyframes fade-in {
@@ -66,4 +59,5 @@
 			opacity: 1;
 		}
 	}
+
 </style>

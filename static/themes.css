@@ -5,6 +5,7 @@
 
 html.dracula-theme {
 	--background: #282a36;
+	--background-transparency: #282a36d4;
 	--body: #6272a4;
 	--highlight: #f8f8f2;
 	--border: #44475a;
@@ -12,6 +13,7 @@ html.dracula-theme {
 
 html.ebony-theme {
 	--background: #4b4e40;
+	--background-transparency: #4b4e40d4;
 	--body: #ffe8d6;
 	--highlight: #dfb59f;
 	--border: #b7b7a4;
@@ -19,6 +21,7 @@ html.ebony-theme {
 
 html.pastel-theme {
 	--background: #264653;
+	--background-transparency: #264653d4;
 	--body: #e9c46a;
 	--highlight: #e76f51;
 	--border: #3a6b7e;
@@ -26,12 +29,14 @@ html.pastel-theme {
 
 html.grayscale-theme {
 	--background: #212529;
+	--background-transparency: #212529d4;
 	--body: #afb3b8;
 	--highlight: #ffffff;
 	--border: #495057;
 }
 html.violet-theme {
 	--background: #10002b;
+	--background-transparency: #10002bd4;
 	--body: #9d4edd;
 	--highlight: #e0aaff;
 	--border: #3c096c;
@@ -39,6 +44,7 @@ html.violet-theme {
 
 html.creamy-theme {
 	--background: #364f6b;
+	--background-transparency: #364f6bd4;
 	--body: #3fc1c9;
 	--highlight: #db7ca4;
 	--border: #f5f5f5;

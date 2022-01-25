@@ -3,7 +3,7 @@
 </script>
 
 <header>
-	<a class="subtitle" href="/">Uciel Sola - SvelteKit Experiments</a>
+	<a class="subtitle" href="/">SvelteKit Experiments</a>
 	<ThemeSelector />
 </header>
 
